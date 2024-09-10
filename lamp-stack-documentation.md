@@ -2,16 +2,17 @@
 
 ### Introduction:
 
-__The LAMP stack is a popular open-source web development platform that consists of four main components: Linux, Apache, MySQL, and PHP (or sometimes Perl or Python). This documentation outlines the setup, configuration, and usage of the LAMP stack.__
+__The LAMP stack is a widely used open-source platform for web development, comprising four core components: Linux, Apache, MySQL, and PHP (or occasionally Perl or Python). This guide provides an overview of its setup, configuration, and usage.__
 
 ## Step 0: Prerequisites
 
 __1.__ EC2 Instance of t2.micro type and Ubuntu 24.04 LTS (HVM) was lunched in the us-east-1 region using the AWS console.
 
-![Lunch Instance](./images/creating-ec2.png)
-![Lunch Instance](./images/ec2-details.png)
+![Instance view](./StegHub/Ec2details.png)
 
-__2.__ Created SSH key pair named __my-ec2-key__ to access the instance on port 22
+__2.__ Created SSH key pair named __henrylearndevops__ to access the instance on port 22
+
+![ssh keypair](./StegHub/sshkey.png)
 
 __3.__ The security group was configured with the following inbound rules:
 
@@ -127,9 +128,8 @@ __4.__ __Set a password for root user using mysql_native_password as default aut
 
 Here, the user's password was defined as "Admin123$"
 ```
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Admin123$';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Password.1';
 ```
-![User Password](./images/access-mysql-shell.png)
 Exit the MySQL shell
 ```
 exit
@@ -141,9 +141,7 @@ The security script comes pre-installed with mysql. This script removes some ins
 ```
 sudo mysql_secure_installation
 ```
-![](./images/secure-mysql.png)
 
-Regardless of whether the VALIDATION PASSWORD PLUGIN is set up, the server will ask to select and confirm a password for MySQL root user.
 
 __6.__ __After changing root user password, log in to MySQL console.__
 
