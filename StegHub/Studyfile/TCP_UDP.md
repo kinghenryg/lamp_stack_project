@@ -1,4 +1,3 @@
-```markdown
 # Introduction
 
 The **Transmission Control Protocol (TCP)** and **User Datagram Protocol (UDP)** are essential protocols operating at the transport layer of the **Open Systems Interconnection (OSI)** model. They play a pivotal role in enabling data transmission across networks. Understanding the key distinctions between them is crucial for selecting the appropriate protocol for different applications.
@@ -76,4 +75,3 @@ UDP is preferred for applications where real-time performance is more critical t
 ## Conclusion
 
 Both **TCP** and **UDP** are essential to network data transmission, each with distinct use cases. **TCP** is suited for applications where reliability and data order are paramount, while **UDP** is preferred for real-time, low-latency communication. Understanding the differences between these protocols helps developers design efficient, application-specific network solutions.
-```
