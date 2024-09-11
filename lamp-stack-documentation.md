@@ -277,9 +277,10 @@ __4.__ __Now refresh the page__
 
 ![PHP page](./StegHub/php-page.png)
 
-This page provides information about the server from the perspective of PHP. It is useful for debugging and to ensure the settings are being applied correctly.
+This page displays server information from PHP's perspective, which is helpful for debugging and verifying that the settings are applied correctly.
 
-After checking the relevant information about the server through this page, It’s best to remove the file created as it contains sensitive information about the PHP environment and the ubuntu server. It can always be recreated if the information is needed later.
+After reviewing the server details on this page, it's advisable to delete the file, as it contains sensitive information about the PHP environment and the Ubuntu server. The file can be recreated later if needed.
+
 ```
 sudo rm /var/www/projectlamp/index.php
 ```
@@ -287,7 +288,7 @@ sudo rm /var/www/projectlamp/index.php
 
 __Conclusion:__
 
-The LAMP stack provides a robust and flexible platform for developing and deploying web applications. By following the guidelines outlined in this documentation, It was possible to set up, configure, and maintain a LAMP environment effectively, enabling the creation of powerful and scalable web solutions.
+The LAMP stack offers a powerful and versatile platform for developing and deploying web applications. By following the instructions in this documentation, you can successfully set up, configure, and manage a LAMP environment, allowing for the creation of robust and scalable web solutions.
 
 
 
